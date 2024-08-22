@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: FarmSystem_Project
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb
+    username: root
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update #개발 중 테이블을 자동으로 생성 (운영환경에서는 validate 또는 none 권장)
+    show-sql: true #sql 쿼리 출력
+    properties:
+      hibernate:
+        format_sql: true # sql 쿼리를 보기 좋게 출력
+
+
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        web: DEBUG
