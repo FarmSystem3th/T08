@@ -1,11 +1,14 @@
 package Farm.demo.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
+@Getter @Setter
 public class User {
 
     @Id
@@ -32,7 +35,7 @@ public class User {
     private String address;
 
     @Column(nullable = false)
-    private LocalDate birth;
+    private String  birth;
 
     @Column(length = 1000)
     private String careers;

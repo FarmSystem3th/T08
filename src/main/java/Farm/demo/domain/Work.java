@@ -2,12 +2,13 @@ package Farm.demo.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
-@Getter
+@Getter @Setter
 public class Work {
 
     @Id
@@ -17,11 +18,13 @@ public class Work {
     @Column(nullable = false, length = 100)
     private String name;
 
-    @Column(nullable = false)
+    /*@Column(nullable = false)
     private LocalDate date;
 
     @Column(nullable = false)
-    private String time;
+    private String time;*/
+    @Column(nullable = false)
+    private String date_time;
 
     @Column(nullable = false, length = 45)
     private String location;

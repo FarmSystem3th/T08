@@ -13,8 +13,6 @@ public enum Sex {
     Sex(String value) {
         this.value = value;
     }
-
-    //
-
+    
 
 }

@@ -2,12 +2,14 @@ package Farm.demo.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
-@Getter
+@Getter @Setter
 public class Lecture {
 
     @Id
@@ -17,11 +19,13 @@ public class Lecture {
     @Column(nullable = false, length = 20)
     private String name;
 
-    @Column(nullable = false)
+   /* @Column(nullable = false)
     private LocalDate date;
 
     @Column(nullable = false)
-    private String time;
+    private String time;*/
+    @Column(nullable=false)
+    private String date_time;
 
     @Column(length = 25)
     private String location;
