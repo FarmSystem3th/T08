@@ -12,6 +12,8 @@ import java.util.Set;
 @Getter @Setter
 public class Lecture {
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -19,13 +21,14 @@ public class Lecture {
     @Column(nullable = false, length = 20)
     private String name;
 
+    // localDate 삭제 -String 으로 통합
    /* @Column(nullable = false)
     private LocalDate date;
 
     @Column(nullable = false)
     private String time;*/
     @Column(nullable=false)
-    private String date_time;
+    private String dateTime;
 
     @Column(length = 25)
     private String location;

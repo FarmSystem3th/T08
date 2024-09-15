@@ -12,6 +12,9 @@ import java.util.Optional;
 @RequestMapping("/api/users")
 public class UserController {
 
+
+
+    // 엔티티로 받은 모든 것들을 dto로 받는 작업을 해야함.
     @Autowired
     private UserService userService;
 
